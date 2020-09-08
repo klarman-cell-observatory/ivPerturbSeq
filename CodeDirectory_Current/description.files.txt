@@ -1,0 +1,15 @@
+BatchSample.v2.R: This code samples cells so that there are roughly equal percents for each batch
+GetPerturbations.R: Takes the output of perturbation pipelines and makes a tidy form of it.
+PertLM.R: Performs multivariate linear regression with permutation based p-values
+PertLM_Mean.R: Performs multivariate linear regression with permutation based p-values, compared to average over all perturbations (not used in actual manuscript)
+RunPipeline.sh: The main pipeline
+RunSTM.R: The Code used for STM analysis
+RunSTM.sh: A wrapper for RunSTM.R
+RunSTM_clean.R: A cleaned up version of RunSTM.R that might be useful for others (not used in the manuscript)
+SharedVariable.R: Finds the variable genes in each batch seperately and then combines them to help avoid batch issues
+TestWGNCA_eigen.R: Code for testing pertubations effects on module gene expression (useing PertLM.R for the permutation testing)
+TestWGNCA_eigen_mean.R: Same as TestWGNCA_eigen.R, but uses PertLM_Mean.R instead of PertLM.R (not used in manuscript, just as a sanity check)
+TestWGNCA_kruskal_eigen.v2.R: Runs the Kruskal test (non-parametric ANOVA) on linear model of module expression
+WGCNA.Get.Eigen.R: Used to get the eigen score for WGCNA modules (used in TestWGNCA_eigen.R and TestWGNCA_kruskal_eigen.v2.R)
+load_Seurat.R: Does the basic Seurat analysis
+niceDraw.R: Code for producing some plots 
