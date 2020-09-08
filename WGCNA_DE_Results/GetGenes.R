@@ -4,7 +4,9 @@ library(Seurat)
 
 
 
-
+##
+##Basic code used for WGCNA 
+##
 RunWGCNA<-function(seur,output,myPower)
 {
 	print("Filter Data!")
