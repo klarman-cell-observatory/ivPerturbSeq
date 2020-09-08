@@ -3,6 +3,15 @@ library(dplyr);
 library(tidyr)
 
 
+
+##
+##Tests to see if differences in composition between perturbations. Fee in:
+##seur, the Seurat object
+##celltype, the column in meta.data containing celltype info
+##perturbation, the column in meta.data containing celltype info
+##batch, the column in meta.data containing batch info
+##cutoff, the min number of cells to perform test
+##
 CellComp_Poisson<-function(seur,celltype="CellType",perturatbations="perturbation",batch="batch",cutoff=10)
 {
 
