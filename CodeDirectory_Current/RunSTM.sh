@@ -19,8 +19,7 @@ echo $2
 #Number of topic
 echo $3
 
-export R_LIBS_USER=/psych/genetics_data/ssimmons/R/x86_64-pc-linux-gnu-library/3.5_scumi
+export R_LIBS_USER=/psych/genetics_data/ssimmons/R/x86_64-pc-linux-gnu-library/3.5_pert
 
 
-Rscript /psych/genetics_data/ssimmons/Perturb/Updated_Data_March_11_2019/CodeDirectory_Current/RunSTM.R $1 $2 $3
-#Rscript /psych/genetics_data/ssimmons/Perturb/BasicPipeline/RunSTM.R $1 $2 $3 
+Rscript RunSTM.R $1 $2 $3

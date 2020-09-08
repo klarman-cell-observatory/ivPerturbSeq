@@ -16,7 +16,6 @@
 ##4) R, including dplyr and tidyr
 ##########################################
 
-#export R_LIBS_USER=/psych/genetics_data/ssimmons/R/x86_64-pc-linux-gnu-library/3.3
 
 tenXdir=$1
 pert=$2

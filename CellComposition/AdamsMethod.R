@@ -141,7 +141,7 @@ return(tab)
 if(!interactive())
 {
 print("Load Seurat")
-load("../SeurObj_R3.5/key.500genes.Robj")
+load("../SeuratObjects/key.500genes.Robj")
 tab=CellComp_Poisson(key,celltype="CellType",perturatbations="perturbation",batch="batch",cutoff=10)
 save(tab,file="CellComposition.Poisson.Robj")
 write.table(tab,file="CellComposition.Poisson.txt",sep="\t",quote=F,row.names=F)

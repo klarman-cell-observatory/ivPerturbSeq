@@ -1,4 +1,3 @@
-#source("NiceLM.R")
 library(Seurat)
 source("WGCNA.Get.Eigen.R")
 source("BatchSample.v2.R")
@@ -7,12 +6,8 @@ library(coin)
 
 WGCNA_easy<-function(seur,celltype)
 {
-#print("Subset")
-#seur<-SubsetData(seur,WhichCells(seur,celltype))
-
 print("Load")
 load("../WGCNA_DE_Results/lists.tidy.current.Robj")
-#load("/psych/genetics_data/ssimmons/Perturb/data/WGCNA.genes.clean.Robj")
 
 tab=tab[tab$CellType==celltype,]
 
